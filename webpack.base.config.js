@@ -13,33 +13,30 @@ module.exports = (/**@type WebpackConfig*/ config, context) => {
     ...config,
     externals: {
       vscode: 'commonjs vscode', // ignored because it doesn't exist
-    },
-    // trying to work around https://github.com/facebook/create-react-app/pull/11752
     // ignoreWarnings: [/^warning/i],
     // stats: 'none',
-    // devtool: 'none',
+    // devtool: 'gitCLI',
     // plugins: [
-    //   new webpack.SourceMapDevToolPlugin({
-    //     exclude: [/vscode-languageserver/i],
+    //   new webpack.SourceMapDevToolPlugin(
     //   }),
     // ],
     // stats: {
     //   hash: true,
-    //   timings: false,
-    //   cached: false,
-    //   cachedAssets: false,
-    //   modules: false,
-    //   warnings: false,
+    //   timings: true,
+    //   cached: true,
+    //   cachedAssets: true,
+    //   modules: true,
+    //   warnings: true,
     //   errors: true,
     //   colors: true,
     //   chunks: true,
-    //   assets: false,
-    //   chunkOrigins: false,
-    //   chunkModules: false,
-    //   children: false,
-    //   reasons: false,
+    //   assets: true,
+    //   chunkOrigins: true,
+    //   chunkModules: true,
+    //   children: true,
+    //   reasons: true,
     // }
   };
-  // console.log(JSON.stringify(config, undefined, 2));
+  // console.log(JSON.stringify(config,, 2));
   return newConfig;
 };

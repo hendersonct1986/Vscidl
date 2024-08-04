@@ -50,11 +50,9 @@ tmp/**
 .all-contributorsrc
 .editorconfig
 .eslintrc.json
-.gitignore
 .npmrc
 .prettierignore
 .prettierrc
-.vscodeignore
 angular.json
 compile_speed_test.pro
 decorate-angular-cli.js
